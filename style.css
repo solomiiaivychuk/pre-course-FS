@@ -1,0 +1,309 @@
+/* home and buttons*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #706B5E, lightgrey);
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #3d6ded;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+}
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #8897b9, #947e8e);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 50px;
+  padding: 50px;
+}
+
+.card:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.profile-image:active {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.nav-item {
+  align-self: flex-end;
+  color: #3d6ded;
+  font-size: 18px;
+  margin: 15px;
+  text-decoration: none;
+}
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+.my-name {
+  text-align: center;
+}
+.subtitle {
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.5rem 0.2rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #3d6ded;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.fab {
+  color: black;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover, .social-link:hover  {
+  background-color: #89a3eb;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+
+
+/*contact form*/
+
+.wrapper {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #68738b, #dad9df);
+	width: 55%;
+	margin: 0 auto;
+	padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+
+fieldset {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-bottom: 2rem;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+label {
+	display: block;
+	padding-bottom: 0.3rem;
+}
+
+input:not([type="checkbox"]){
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1rem;
+  color: black;
+	display: block;
+	margin-bottom: 1rem;
+  width: 25rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+  border: none;
+}
+
+.submit-button:disabled{
+  cursor: not-allowed;
+  background-color: #a6bdfd;
+  color: #454b58
+}
+
+
+
+/*"about" page*/
+
+.about {
+  background-image: linear-gradient(to bottom right, #68738b, #dad9df);
+	width: 55%;
+	margin: 0 auto;
+  padding: 1em;
+  line-height: 1.5;
+  
+}
+.my-photo {
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 2rem;
+}
+.intro {
+  margin: 2rem;
+  padding-top: 1rem;
+  font-size: 1.05rem;
+}
+.intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about fieldset {
+  padding: 0 1.5rem 1rem 1.5rem;
+  line-height: 1.5;
+} 
+
+.buttons-cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-cities:disabled {
+  cursor: not-allowed;
+  background-color: #a6bdfd;
+  color: #454b58
+}
+.city {
+  display: none;
+  text-align: center;
+}
+.active {
+  display: block;
+}
+iframe {
+  margin-top: 1.5rem;
+}
+
+
+
+/* navigation bar - footer*/
+
+footer {
+  background-image: linear-gradient(to bottom, rgb(128, 126, 126), #b8b3b3);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+footer li {
+  display: flex;
+  text-align: right;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+}
+footer ul {
+  text-align: right;
+  padding-left: 15rem;
+}
+.copyright {
+  margin: 3rem 1rem;;
+}
+.tools {
+padding-top: 5rem;
+
+}
+
+
+
